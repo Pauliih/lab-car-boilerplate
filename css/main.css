@@ -1,1 +1,96 @@
 /* Los estilos de tu proyecto */
+.txt-white{
+  color: #fff;
+}
+
+body{
+  background-color: #F7B617FF;
+}
+
+.bg-img1{
+  background-image: url("../assets/images/taxi.jpg");
+  background-size: cover;
+  background-position: 75% 92%;
+  padding-top: 15%;
+  padding-bottom: 15%; 
+}
+
+.txt-header{
+  background-color: #F7B617FF;
+  color: #fff;
+  padding-top: 3%;
+  padding-bottom: 4%;
+}
+
+.dl-new-app{
+  border-top: 0.1em solid white;
+  border-right: 0.1em solid white;
+  border-bottom: 0.1em solid white;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.text-download{
+  padding-top: 3%;
+}
+
+.bg-img2{
+  background-image: url(../assets/images/conduce.jpg);
+  background-size: 100%;
+  background-position: 80% 100%;
+  padding-top: 15%;
+  padding-bottom: 15%; 
+}
+
+.bg-opacity{
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.btn-driver{
+  background-color: #F7B617FF;
+}
+
+.container-tarifa{
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.start, .finish{
+  border: 0;
+  border: 0.1em solid white;
+  border-radius: 0.4em;
+  background-color: #F7B617FF;
+  margin-bottom: 5%;
+}
+
+.ico{
+  margin-right: 2%;
+}
+
+.rute{
+  font-weight: bold;
+}
+
+.map{
+  width: 475px; 
+  height: 450px;
+  border: 0.1em solid white;
+  padding: 1%;
+}
+
+footer{
+  background-color: #2B2B2BFF;
+  color: #fff;
+}
+
+.logo-footer{
+  padding-top: 3%;
+}
+
+footer li{
+  list-style: none;
+  margin: 3%;
+}
