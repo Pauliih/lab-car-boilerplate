@@ -30,8 +30,30 @@ body{
 .txt-header{
   background-color: #F7B617FF;
   color: #fff;
-  padding-top: 3%;
+  padding-top: 2%;
   padding-bottom: 4%;
+}
+
+.paragraph{
+  margin-top: 5%;
+}
+
+.registrate, .conviertete{
+  font-weight: bold;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: #000;
+}
+
+.o-bien::after, .o-bien::before{
+  content: " ";
+  display: inline-block;
+  width: 20%;
+  height: 0.1em;
+  background-color: #FFFFFF ;
+  margin: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .dl-new-app{
@@ -68,6 +90,10 @@ body{
 .btn-driver{
   background-color: #F7B617FF;
 }
+/* cambiar color del texto del placeholder */
+#tarifa input::-webkit-input-placeholder {  
+  color: white;
+}
 
 .container-tarifa{
   padding-top: 4%;
@@ -88,6 +114,7 @@ body{
 
 .rute{
   font-weight: bold;
+  margin-left: 8%;
 }
 
 .map{
