@@ -56,10 +56,12 @@ body{
   margin-right: 10%;
 }
 
+.logo-blanco1{
+  margin: 0;
+  width: 10%;
+}
 .dl-new-app{
-  border-top: 0.1em solid white;
-  border-right: 0.1em solid white;
-  border-bottom: 0.1em solid white;
+  border: 0.1em solid white;
   margin-top: 4%;
   margin-bottom: 4%;
   padding-top: 3%;
@@ -143,12 +145,12 @@ footer{
   margin-right: 0.5em; 
 }
 
-.links a{
+.links1 a, .links2 a:hover{
   text-decoration: none;
   color: white;
 }
 
-.links a:hover{
+.links1 a:hover, .links2 a:hover{
   text-decoration: none;
   color: lightgrey;
 }

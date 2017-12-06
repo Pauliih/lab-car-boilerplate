@@ -9,6 +9,7 @@
 	<title>Lacar</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<section id="bar">
@@ -16,7 +17,7 @@
 			<div class="container">
         <!-- Parte móvil -->
 				<div class="navbar-header bar-mov">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+					<button type="button" class="navbar-toggle collapsed btn-bars" data-toggle="collapse">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
@@ -30,7 +31,9 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#">Viaja</a></li>
 						<li><a href="#">Conduce</a></li>
-						<li><a href="#">Inicia Sesión</a></li>	
+						<li><a href="#sesion" data-toggle="modal">Inicia Sesión</a></li>	
+            
+
 					</ul>
 				</div>
 			</div>
@@ -40,22 +43,31 @@
   <section id="header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 bg-img1">
+        <div class="col-xs-12 col-sm-12 col-md-12 bg-img1">
           <div class="row">
-            <div class="col-md-5 col-md-offset-7 txt-header txt-white">
+            <!-- version desktop -->
+            <div class="col-xs-7 col-xs-offset-5 col-sm-7 col-sm-offset-5 col-md-5 col-md-offset-7 txt-header txt-white hidden-xs hidden-sm">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <h1>Disfruta del viaje <br>Eres el dueño de tu tiempo </h1>
+                <p class="paragraph lead">Viaja con <img src="assets/images/logoBlanco.png" alt="logo blanco" class="img-responsive logo-blanco1"></p>
+                
+                <a href="#registrar" data-toggle="modal" type="button" class="btn btn-default btn-lg registrate ">REGÍSTRATE</a>
+                <!-- Aqui va el separador -->
                 <div class="col-md-12">
-                  <h1>Disfruta del viaje <br>Eres el dueño de tu tiempo </h1>
-                  <p class="paragraph lead">Viaja con <img src="assets/images/logoBlanco.png" alt=""></p>
-                  
-                  <input type="button" class="btn btn-default btn-lg registrate" value="REGÍSTRATE">
-                  <!-- Aqui va el separador -->
-                  <div class="col-md-12">
-                    <p class="lead o-bien">o bien</p>
-                  </div>
-                  <br>
-                  <input type="button" class="btn btn-default btn-lg conviertete" value="Conviértete en un conductor">
+                  <p class="lead o-bien">o bien</p>
                 </div>
-             
+                <br>
+                <input type="button" class="btn btn-default btn-lg conviertete" value="Conviértete en un conductor">
+              </div>
+            </div>
+            <!-- version movil -->
+            <div class="col-xs-9 col-xs-offset-3 col-sm-7 col-sm-offset-5 col-md-5 col-md-offset-7 txt-header txt-white visible-xs visible-sm">
+              <div class="col-xs-12 col-sm-12 col-md-12">
+                <h1>Comienza a viajar <br>con <img src="assets/images/logoBlanco.png" alt="logo blanco" class="img-responsive logo-blanco1"></h1>
+                             
+                <a href="#" data-toggle="modal" type="button" class="btn btn-default btn-lg registrate ">Descarga el app</a>
+                
+              </div>
             </div>
           </div>
         </div>
@@ -66,11 +78,12 @@
   <section id="download">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 container-download">
+        <div class="col-xs-12 col-sm-12 col-md-12 container-download">
           <div class="row">
             <div class="col-md-10 dl-new-app">
               <div class="row">
                 <div class="col-md-5 col-md-offset-1 text-right">
+
                   <img src="assets/images/iPhone6Plus.png" class="img-responsive" alt="">
                 </div>
                 <div class="col-md-5 text-download txt-white">
@@ -89,12 +102,12 @@
   <section id="driver">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12 bg-img2">
+        <div class="col-xs-12 col-sm-12 col-md-12 bg-img2">
           <div class="row">
             <div class="col-md-4 col-md-offset-8 text-driver bg-opacity">
               <h1 class="">Conduce cuando quieras</h1>
               <p class="lead">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-              <input type="button" class="btn btn-driver lead" value="Conviértete en conductor">
+              <a href="#conductor" type="button" data-toggle="modal" class="btn btn-driver lead">Conviértete en conductor</a>
             </div>
           </div>
           
@@ -106,26 +119,26 @@
   <section id="tarifa" class="container">
     <!-- container -->
       <div class="row">
-        <div class="col-md-12 container-tarifa">
+        <div class="col-xs-12 col-sm-12 col-md-12 container-tarifa">
           <div class="container">
             <div class="row">
               <div class="col-md-6  txt-white">
                 <!-- tarifa -->
                 <h1>Tarifas</h1>
                 <p class="lead">Consulta las tarifas LabCar aquí</p>
-                <div class="col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                   <img src="assets/images/shape.png" class="ico" alt="">
                   <input type="text" placeholder="Ingrese su punto de partida" class="input-lg start">
                 </div>
-                <div class="col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                   <img src="assets/images/shape2.png" class="ico" alt="">
                   <input type="text" placeholder="Ingrese su destino" class="input-lg finish">
                 </div>
-                <div class="col-md-12">
+                <div class="col-xs-12 col-sm-12 col-md-12">
                   <input type="button" class="btn btn-default rute" value="¡TRAZAR RUTA!">
                 </div>
               </div>
-              <div class="col-md-6 text-center">
+              <div class="col-xs-12 col-sm-12 col-md-6 text-center">
                 <!-- mapa -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6660.338020926657!2d-70.64223529999998!3d-33.41883779999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512486028181" class="map" frameborder="0" allowfullscreen></iframe>
               </div>
@@ -138,13 +151,13 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 container-footer">
-          <div class="col-md-12 logo-lab">
+        <div class="col-xs-12 col-sm-12 col-md-12 container-footer">
+          <div class="col-xs-12 col-sm-12 col-md-12 logo-lab">
             <img src="assets/images/logoBlanco.png" class="logo-footer" alt="">
             <div class="divider"></div>
           </div>
           <div class="row">
-            <div class="col-md-3 icons">
+            <div class="hidden-xs hidden-sm col-md-3 icons">
               <!-- iconos -->
               <a href="http://www.fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
               <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -153,7 +166,7 @@
               <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
 
             </div>
-            <div class="col-md-3 links">
+            <div class="col-xs-6 col-sm-6 col-md-3 links1">
               <ul>
                 <li><a href="#">Viaja</a></li>
                 <li><a href="#">Conduce</a></li>
@@ -165,7 +178,7 @@
                 <li><a href="#">Seguridad</a></li>
               </ul>
             </div>
-            <div class="col-md-3 links">
+            <div class="hidden-xs hidden-sm col-md-3 links2">
               <ul>
                 <li><a href="#">Oportunidades</a></li>
                 <li><a href="#">Nuestra historia</a></li>
@@ -177,14 +190,23 @@
                 <li><a href="">Coders</a></li>
               </ul>
             </div>
-            <div class="col-md-3 stores">
-              <a href="#"><img src="assets/images/appstore.png" alt=""></a>
-              <a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt=""></a>         
+            <div class="col-xs-6 col-sm-6 col-md-3 stores">
+              <div class="col-xs-12 col-sm-12 col-md-12 icons visible-sm visible-xs icons">
+                <a href="http://www.fb.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="http://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="http://www.apple.com"><i class="fa fa-apple" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 icons visible-sm visible-xs img-stores">
+                <a href="#"><img src="assets/images/appstore.png" class="img-responsive" alt=""></a>
+                <a href="#"><img src="assets/images/enBadgeWebGeneric.png" class="img-responsive" alt=""></a>
+              </div>      
             </div>
           </div>
           <div class="divider"></div>
           <div class="row">
-            <div class="col-md-12 cia">
+            <div class="col-xs-12 col-sm-12 col-md-12 cia">
               <p>© 2017 LabCar technologies Inc.</p>
             </div>
           </div>
@@ -199,6 +221,74 @@
   <script src="https://use.fontawesome.com/4db2d1a00b.js"></script>
 	<script src="js/app.js"></script>
 	<script src="js/jquery.min.js"></script>
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
+
+<!-- modals -->
+<div class="modal fade" id="sesion">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- header de la ventana -->
+      <div class="modal-header">
+        <!-- boton para cerrar la ventana -->
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">Encabezado de la ventana</h3>
+      </div>
+      <!-- contenido de la ventana -->
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus qui iure, quaerat blanditiis amet, consequatur voluptate. Obcaecati molestiae dolor, fugiat animi, dolore alias aut voluptate autem maiores officia praesentium deleniti.</p>
+      </div>
+      <!-- footer de la ventana -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registrar">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- header de la ventana -->
+      <div class="modal-header">
+        <!-- boton para cerrar la ventana -->
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">Encabezado de la ventana</h3>
+      </div>
+      <!-- contenido de la ventana -->
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus qui iure, quaerat blanditiis amet, consequatur voluptate. Obcaecati molestiae dolor, fugiat animi, dolore alias aut voluptate autem maiores officia praesentium deleniti.</p>
+      </div>
+      <!-- footer de la ventana -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="conductor">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- header de la ventana -->
+      <div class="modal-header">
+        <!-- boton para cerrar la ventana -->
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3 class="modal-title">Encabezado de la ventana</h3>
+      </div>
+      <!-- contenido de la ventana -->
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus qui iure, quaerat blanditiis amet, consequatur voluptate. Obcaecati molestiae dolor, fugiat animi, dolore alias aut voluptate autem maiores officia praesentium deleniti.</p>
+      </div>
+      <!-- footer de la ventana -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
 </html>

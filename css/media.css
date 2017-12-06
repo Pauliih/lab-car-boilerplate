@@ -1,0 +1,33 @@
+@media (max-width: 768px){
+  .btn-bars{
+    float: left;
+  }
+
+  .logo-nav {
+    margin-left: 45%;
+  }
+
+  .logo-lab{
+    padding-top: 0;
+  }
+  .icons, .stores{
+    padding-top: 0;
+  }
+
+  .img-stores{
+    margin-top: 5%;
+  }
+
+  .links1 ul{
+    padding-left: 0;
+  }
+
+  iframe{
+    width: 100%;
+  }
+  
+  .cia{
+    padding-bottom: 0;
+  }
+  
+}
