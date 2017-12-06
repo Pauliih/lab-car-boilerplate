@@ -7,11 +7,34 @@
     margin-left: 45%;
   }
 
+  .text-driver{
+    padding-top: 15%;
+    padding-bottom: 20%;
+  }
+
   .logo-lab{
     padding-top: 0;
   }
   .icons, .stores{
     padding-top: 0;
+  }
+
+  .rute{
+    text-align: center;
+  }
+  
+  .iphone{
+    margin: 0;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    width: 70%;
+  }
+
+  .cont-mov{
+    padding-right: 0.7em;
+    padding-left: 0.7em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .img-stores{

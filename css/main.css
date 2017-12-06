@@ -76,6 +76,7 @@ body{
   background-image: url(../assets/images/conduce.jpg);
   background-size: 100%;
   background-position: 80% 60%;
+  background-repeat: no-repeat;
 }
 
 .text-driver{
@@ -115,9 +116,10 @@ body{
   margin-right: 2%;
 }
 
-.rute{
+.btn-rute{
   font-weight: bold;
   margin-left: 8%;
+  margin-bottom: 15%;
 }
 
 .map{
