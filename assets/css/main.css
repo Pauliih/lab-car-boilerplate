@@ -20,7 +20,7 @@ body{
 }
 
 .bg-img1{
-  background-image: url("../assets/images/taxi.jpg");
+  background-image: url(../images/taxi.jpg);
   background-size: cover;
   background-position: 75% 92%;
   padding-top: 15%;
@@ -73,7 +73,7 @@ body{
 }
 
 .bg-img2{
-  background-image: url(../assets/images/conduce.jpg);
+  background-image: url(../images/conduce.jpg);
   background-size: 100%;
   background-position: 80% 60%;
   background-repeat: no-repeat;
