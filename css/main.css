@@ -91,6 +91,7 @@ body{
 
 .btn-driver{
   background-color: #F7B617FF;
+  color: #fff;
 }
 /* cambiar color del texto del placeholder */
 #tarifa input::-webkit-input-placeholder {  
@@ -145,7 +146,7 @@ footer{
   margin-right: 0.5em; 
 }
 
-.links1 a, .links2 a:hover{
+.links1 a, .links2 a{
   text-decoration: none;
   color: white;
 }
